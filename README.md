@@ -1,2 +1,1 @@
-# huddle-landing-page-zuri
-A Design for Huddle Landing Page
+# A Design for Huddle Landing Page
