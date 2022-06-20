@@ -2,6 +2,7 @@
 
 :root {
   --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(322, 95%, 76%);
   --very-pale-cyan: hsl(193, 100%, 96%);
   --very-dark-cyan: hsl(192, 100%, 9%);
   --grayish-blue: hsl(208, 11%, 55%);
@@ -21,6 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 @media screen and (max-width: 1000px) {
@@ -80,6 +82,11 @@ header button {
   cursor: pointer;
 }
 
+header button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px,
+    rgba(0, 0, 0, 0.15) 0px -5px 15px;
+}
+
 .first-section,
 .second-section,
 .third-section,
@@ -103,6 +110,11 @@ header button {
   border-radius: 20px;
   font-size: small;
   cursor: pointer;
+}
+
+.get-started:hover,
+.ready button:hover {
+  background-color: var(--light-pink);
 }
 
 .first-section__right img {
@@ -129,6 +141,10 @@ header button {
 
 .third-section__right {
   width: 100%;
+}
+
+main {
+  z-index: 10;
 }
 
 .ready {
@@ -161,7 +177,7 @@ footer {
   padding: 13rem 7rem;
   font-family: 'Open Sans', sans-serif;
   color: var(--very-pale-cyan);
-  z-index: -1;
+  bottom: 0;
 }
 
 .footer-contents {
@@ -212,6 +228,16 @@ li {
   margin-bottom: 1rem;
 }
 
+li a {
+  text-decoration: none;
+  color: var(--very-pale-cyan);
+}
+
+li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 i {
   width: 35px;
   height: auto;
@@ -221,8 +247,15 @@ i {
   margin-right: 10px;
 }
 
+i:hover {
+  cursor: pointer;
+  border: 1px solid var(--pink);
+  color: var(--pink);
+}
+
 .copyright {
   margin-top: 2rem;
   text-align: right;
   font-size: 10px;
 }
+
