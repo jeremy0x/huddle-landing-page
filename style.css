@@ -141,17 +141,33 @@ header button {
   padding: 40px 50px;
   width: 50%;
   border-radius: 20px;
+  margin-bottom: -70px;
+}
+
+.ready button {
+  background-color: var(--pink);
+  padding: 23px 100px;
+  border: none;
+  color: var(--very-pale-cyan);
+  border-radius: 50px;
+  font-size: large;
+  cursor: pointer;
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
   background-color: var(--very-dark-cyan);
   height: 35rem;
   width: 100%;
   padding: 13rem 7rem;
   font-family: 'Open Sans', sans-serif;
   color: var(--very-pale-cyan);
+  z-index: -1;
+}
+
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 footer .huddle-logo {
@@ -180,7 +196,8 @@ footer .huddle-logo {
   padding-top: 3px;
 }
 
-.details-list {
+.details-list,
+.social-media {
   margin-top: 5rem;
 }
 
@@ -196,7 +213,16 @@ li {
 }
 
 i {
+  width: 35px;
+  height: auto;
   border: 1px solid var(--very-pale-cyan);
   border-radius: 50%;
-  padding: 5px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.copyright {
+  margin-top: 2rem;
+  text-align: right;
+  font-size: 10px;
 }
