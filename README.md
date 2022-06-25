@@ -1,10 +1,6 @@
-# A Design for Huddle Landing Page
+## A Design for Huddle Landing Page
 
-## Screenshot
-
-![image](https://user-images.githubusercontent.com/87664239/174897809-1a36378f-fb70-498e-8473-5320e118ec64.png)
-
-<hr>
+**Live Preview Link: https://jeremiey.github.io/huddle-landing-page-zuri**
 
 ⚠️ ⚠️ This repository is for the **Rock Paper Scissors Game** task in the [I4GxZuri Training](https://training.zuri.team).
 
