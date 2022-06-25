@@ -24,12 +24,6 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
-  body {
-    background-image: url(images/bg-hero-mobile.svg);
-  }
-}
-
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
