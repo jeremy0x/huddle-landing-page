@@ -184,7 +184,11 @@ header button:hover {
   .first-section {
     flex-direction: column;
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  .second-section {
+    margin-top: 9rem;
   }
 
   .second-section,
