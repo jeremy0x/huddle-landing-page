@@ -15,7 +15,6 @@
 }
 
 body {
-  background-image: url(images/bg-hero-desktop.svg);
   background-color: var(--very-pale-cyan);
   max-width: 100%;
   display: flex;
@@ -86,6 +85,16 @@ img:hover {
 }
 
 header {
+  background-image: url(images/bg-hero-desktop.svg);
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    background-image: url(images/bg-hero-mobile.svg);
+  }
+}
+
+header .header-top {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -95,17 +104,19 @@ header {
 header img {
   width: 15%;
   height: 1%;
+  padding-top: 0.7em;
 }
 
 @media screen and (max-width: 768px) {
   header img {
-    width: 20%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 480px) {
   header img {
-    width: 30%;
+    width: 35%;
+    padding-top: 0.5em;
   }
 }
 
@@ -117,7 +128,7 @@ header button {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 1em;
   max-width: 100%;
   height: auto;
 }
@@ -144,8 +155,8 @@ header button:hover {
 
 @media screen and (max-width: 992px) {
   header button {
-    padding: 0.4rem 1.5rem;
-    font-size: 0.7em;
+    padding: 0.5rem 2rem;
+    font-size: 0.9em;
   }
 
   .first-section__left .get-started {
@@ -153,17 +164,10 @@ header button:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   header button {
-    padding: 0.4rem 1rem;
-    font-size: 0.7em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  header button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.7em;
+    padding: 0.5rem 1rem;
+    font-size: 0.5em;
   }
 }
 
@@ -285,7 +289,7 @@ main {
 
 @media screen and (max-width: 600px) {
   .ready h2 {
-    font-size: 1rem
+    font-size: 1rem;
   }
 
   .ready button {
