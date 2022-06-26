@@ -6,6 +6,7 @@
   --very-pale-cyan: hsl(193, 100%, 96%);
   --very-dark-cyan: hsl(192, 100%, 9%);
   --grayish-blue: hsl(208, 11%, 55%);
+  --gray-shadow: hsla(209, 11%, 55%, 0.247);
 }
 
 * {
@@ -80,6 +81,7 @@ img:hover {
 
 header {
   background-image: url(images/bg-hero-desktop.svg);
+  padding-bottom: 3rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -92,7 +94,7 @@ header .header-top {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 3rem;
+  padding: 2rem 3.5rem;
 }
 
 header img {
@@ -165,14 +167,37 @@ header button:hover {
   }
 }
 
-.first-section,
+.first-section {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.second-section {
+  margin-top: 10%;
+}
+
+.third-section,
+.fourth-section {
+  margin-top: 5%;
+}
+
 .second-section,
 .third-section,
 .fourth-section {
   display: flex;
   align-items: center;
-  margin-top: 5%;
   width: 100%;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px var(--gray-shadow);
+}
+
+.second-section,
+.third-section {
+  margin-bottom: 2rem;
 }
 
 .first-section__left {
@@ -195,18 +220,23 @@ header button:hover {
   .fourth-section {
     flex-direction: column-reverse;
     text-align: center;
-    margin-bottom: 10em;
   }
 
   .third-section {
     flex-direction: column;
     text-align: center;
-    margin-bottom: 10em;
   }
 
   .first-section__left {
     width: 90%;
     padding: 5px;
+  }
+
+  .second-section,
+  .third-section,
+  .fourth-section {
+    padding-bottom: 0;
+    padding-top: 3rem;
   }
 }
 
@@ -223,7 +253,7 @@ header button:hover {
 
 .second-section__right img,
 .fourth-section__right img {
-  width: 75%;
+  width: 80%;
 }
 
 .third-section__left img {
@@ -255,6 +285,15 @@ header button:hover {
 
 main {
   z-index: 10;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }
 
 .ready {
@@ -262,13 +301,14 @@ main {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 15%;
   background-color: var(--very-pale-cyan);
   padding: 50px 50px;
   width: 60%;
   border-radius: 20px;
   margin-bottom: -70px;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px var(--gray-shadow);
 }
 
 .ready:hover {
@@ -286,6 +326,10 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+  .ready {
+    margin-top: 7em;
+  }
+
   .ready h2 {
     font-size: 1rem;
   }
@@ -298,8 +342,7 @@ main {
 
 @media screen and (max-width: 992px) {
   .ready {
-    width: 85%;
-    margin-top: 10%;
+    width: 95%;
     padding: 25px 20px;
   }
   .ready button {
