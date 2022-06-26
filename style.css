@@ -303,7 +303,7 @@ main {
   align-items: center;
   margin: auto;
   margin-top: 15%;
-  background-color: var(--white);
+  background-color: white;
   padding: 50px 50px;
   width: 60%;
   border-radius: 20px;
