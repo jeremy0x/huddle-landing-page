@@ -7,6 +7,7 @@
   --very-dark-cyan: hsl(192, 100%, 9%);
   --grayish-blue: hsl(208, 11%, 55%);
   --gray-shadow: hsla(209, 11%, 55%, 0.247);
+  --white: #f0f0f0;
 }
 
 * {
@@ -16,7 +17,7 @@
 }
 
 body {
-  background-color: var(--very-pale-cyan);
+  background-color: var(--white);
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -80,8 +81,9 @@ img:hover {
 }
 
 header {
-  background-image: url(images/bg-hero-desktop.svg);
   padding-bottom: 3rem;
+  background-color: var(--very-pale-cyan);
+  background-image: url(images/bg-hero-desktop.svg);
 }
 
 @media screen and (max-width: 992px) {
@@ -117,7 +119,7 @@ header img {
 }
 
 header button {
-  background-color: var(--very-pale-cyan);
+  background-color: var(--white);
   padding: 0.5rem 3rem;
   border: none;
   color: var(--very-dark-cyan);
@@ -302,7 +304,7 @@ main {
   align-items: center;
   margin: auto;
   margin-top: 15%;
-  background-color: var(--very-pale-cyan);
+  background-color: var(--white);
   padding: 50px 50px;
   width: 60%;
   border-radius: 20px;
