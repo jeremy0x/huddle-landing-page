@@ -6,8 +6,7 @@
   --very-pale-cyan: hsl(193, 100%, 96%);
   --very-dark-cyan: hsl(192, 100%, 9%);
   --grayish-blue: hsl(208, 11%, 55%);
-  --gray-shadow: hsla(209, 11%, 55%, 0.147);
-  --gray-text-shadow: hsla(209, 11%, 55%, 0.5);
+  --gray-shadow: hsla(209, 11%, 55%, 0.1);
 }
 
 * {
@@ -69,7 +68,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 img {
@@ -77,7 +76,7 @@ img {
 }
 
 img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 header {
@@ -124,7 +123,7 @@ header button {
   border: none;
   color: var(--very-dark-cyan);
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
   cursor: pointer;
   font-size: 1em;
   max-width: 100%;
@@ -133,7 +132,7 @@ header button {
 
 header button:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px,
-    rgba(0, 0, 0, 0.15) 0px -3px 15px;
+    rgba(0, 0, 0, 0.12) 0px -3px 15px;
 }
 
 .first-section__left .get-started {
@@ -208,7 +207,7 @@ header button:hover {
 }
 
 .first-section .first-section__left h1 {
-  animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 @keyframes scale {
@@ -222,25 +221,25 @@ span {
   filter: blur(4px);
 }
 span:nth-child(1) {
-  animation: fade-in 3.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(2) {
-  animation: fade-in 3.5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 1.5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(3) {
-  animation: fade-in 3.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 1.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(4) {
-  animation: fade-in 3.5s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 1.5s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(5) {
-  animation: fade-in 3.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 1.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(6) {
-  animation: fade-in 3.5s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 1.5s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(7) {
-  animation: fade-in 3.5s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 1.5s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 @keyframes fade-in {
   100% {
@@ -356,7 +355,7 @@ main {
 }
 
 .ready:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .ready button {
@@ -478,10 +477,6 @@ li a {
 li a:hover {
   cursor: pointer;
   text-decoration: underline;
-  text-shadow: 0 0 10px var(--gray-text-shadow), 0 0 10px var(--gray-text-shadow),
-    0 0 20px var(--gray-text-shadow), 0 0 30px var(--gray-text-shadow),
-    0 0 40px var(--gray-text-shadow), 0 0 50px var(--gray-text-shadow),
-    0 0 60px var(--gray-text-shadow);
 }
 
 i {
@@ -498,7 +493,7 @@ i:hover {
   cursor: pointer;
   border: 1px solid var(--pink);
   color: var(--pink);
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .copyright {
