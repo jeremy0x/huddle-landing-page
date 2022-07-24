@@ -7,6 +7,6 @@
 
 **[View Live Preview](https://jeremiey.github.io/huddle-landing-page/)**
 
-## Useful Resources:
+## Useful Resources
 
 - [Design Guide.](https://drive.google.com/drive/folders/19i47IPhJbarXdhKFWkyQ6fPslxU7hCrK?usp=sharing)
