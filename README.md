@@ -10,3 +10,5 @@
 ## Useful Resources
 
 - [Design Guide.](https://drive.google.com/drive/folders/19i47IPhJbarXdhKFWkyQ6fPslxU7hCrK?usp=sharing)
+
+jeremiey made a change here.
